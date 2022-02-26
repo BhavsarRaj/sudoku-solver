@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sudoku App</title>
+	<link rel="stylesheet" type="text/css" href="sudokucss.css">
+</head>
+<body>
+	<h2 style="text-align:center">Let's Play Sudoku</h2>
+	<button type="button" onclick="onNewGameClickHandler()">Start a New Game</button>
+	<div class="grid-container">
+		<div class="grid-item top left"> <input type="number" id="1" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="2" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top right"> <input type="number" id="3" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="4" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="5" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top right"> <input type="number" id="6" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="7" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="8" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top right"> <input type="number" id="9" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item left"> <input type="number" id="10" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="11" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="12" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="13" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="14" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="15" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="16" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="17" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="18" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item left"> <input type="number" id="19" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="20" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="21" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="22" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="23" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="24" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="25" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="26" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="27" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item left top"> <input type="number" id="28" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="29" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top right"> <input type="number" id="30" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="31" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="32" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top right"> <input type="number" id="33" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="34" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top"> <input type="number" id="35" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item top right"> <input type="number" id="36" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item left"> <input type="number" id="37" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="38" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="39" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="40" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="41" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="42" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="43" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="44" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="45" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item left bottom"> <input type="number" id="46" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="47" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right bottom"> <input type="number" id="48" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="49" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="50" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right bottom"> <input type="number" id="51" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="52" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="53" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right bottom"> <input type="number" id="54" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item left"> <input type="number" id="55" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="56" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="57" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="58" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="59" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="60" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="61" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="62" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="63" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item left"> <input type="number" id="64" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="65" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="66" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="67" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="68" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="69" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="70" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item"> <input type="number" id="71" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item right"> <input type="number" id="72" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item left bottom"> <input type="number" id="73" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="74" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom right"> <input type="number" id="75" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="76" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="77" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom right"> <input type="number" id="78" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="79" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom"> <input type="number" id="80" min="1" max="9" oninput="onInputHandler(this)"> </div>
+		<div class="grid-item bottom right"> <input type="number" id="81" min="1" max="9" oninput="onInputHandler(this)"> </div>	
+	</div>
+	<button style="margin-top: 1%;margin-left: 46%;font-size: 20px;padding: 10px" type="button" onclick="checkSudokuHandler()">Submit</button>
+	<script src="sudokujs.js"></script>
+</body>
+</html>
